@@ -1,132 +1,79 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    font-family:"Poppins",sans-serif;
-}
-
-body{
-    background-color:#eff3ff;
-}
-
-.container{
-    max-width:500px;
-    position:absolute;
-    transform:translate(-50%,-50%);
-    top:50%;
-    left:50%;
-}
-
-#card{
-    position:relative;
-    width:100%;
-    padding:30px 20px;
-    box-shadow:0 20px 30px black;
-    border-radius:10px;
-}
-
-#card img{
-    display:block;
-    width:300px;
-    max-height:180px;
-    position:relative;
-    margin:30 auto;
-}
-
-.hp
-{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #eff3ff;
+  }
+  .container {
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  #card {
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  #card img {
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+  }
+  .hp {
     width: 80px;
     background-color: #ffffff;
     text-align: center;
-    padding:  8px 0;
-    border-radius: 45%;
-    margin-right:auto;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
     font-weight: 400;
-    position: relative;
-    margin-bottom: 10%;
-    font-weight: 600;
-    color: #23c483;
-}
-.poke-name
-{
+  }
+  .poke-name {
     text-align: center;
     font-weight: 600;
-}
-
-.types
-{
-    display:flex;
-    justify-content: space-around;
-    margin:20px 0 40px 0;
-}
-
-
-.types span
-{
-    font-size: 15px;
-    letter-spacing:0.4px;
-    font-weight: 600;
-    padding:5px 20px;
-    border-radius: 20px;
-    color: white;
-}
-
-.stats {
+  }
+  .types {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+  }
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+  }
+  .stats {
+    display: flex;
     align-items: center;
-}
-
-#attack p
-{
-    color:red;
-    font-weight:200;
-}
-
-#defence p
-{
-    color:blue;
-    font-weight:200;
-}
-
-#speed p
-{
-    color:purple;
-    font-weight:200;
-}
-
-#btn
-{
+    justify-content: space-between;
+    text-align: center;
+  }
+  .stats p {
+    color: #404060;
+  }
+  #btn {
     display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #101010;
+    color: #ffffff;
     position: relative;
     margin: 30px auto;
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #ffffff 80%;
-    border: 0.1;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-}
-
-#btn:hover
-{
-    background-color:#23c483;
-    box-shadow:0px 15px 20px rgba(46 229 157 0.4);
-    color:#fff;
-    transform:translateY(-7px);
-}
-
-#btn:active
-{
-
-    transform:translateY(1px);
-}
-
+    border: none;
+    border-radius: 5px;
+  }
